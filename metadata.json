@@ -1,0 +1,6 @@
+{
+  "name": "AegisCampus - Safety & Escalation System",
+  "description": "Confidential campus safety and anti-harassment reporting platform with deterministic multi-level escalation from HOD to Dean to Higher Authority.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

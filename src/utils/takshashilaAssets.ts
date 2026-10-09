@@ -1,0 +1,188 @@
+// Takshashila University Official Asset Registry & Campus Infrastructure Data
+// Location: Tindivanam Taluk, Ongur, Villupuram District, Tamil Nadu 604305 (NH 45 GST Road)
+
+export interface CampusBlock {
+  id: string;
+  name: string;
+  tamilName: string;
+  code: string;
+  category: 'academic' | 'hostel' | 'facility' | 'security';
+  description: string;
+  locationDetails: string;
+  gpsCoordinates: { lat: number; lng: number };
+  cctvCount: number;
+  emergencyBooth: string;
+  securityInCharge: string;
+  contactNumber: string;
+  image: string;
+  safetyRating: string;
+}
+
+export const TAKSHASHILA_CAMPUS_INFO = {
+  name: 'Takshashila University',
+  tamilName: 'தக்ஷஷீலா பல்கலைக்கழகம்',
+  tagline: 'Empowering Minds, Securing Futures',
+  address: 'Tindivanam Taluk, Ongur, Villupuram District, Tamil Nadu 604305',
+  highway: 'NH-45 (Chennai - Trichy GST Highway, near Melmaruvathur & Tindivanam)',
+  gpsCoordinates: {
+    lat: 12.2359,
+    lng: 79.7431,
+    googleMapsUrl: 'https://www.google.com/maps?q=12.2359,79.7431+(Takshashila+University,+Ongur,+Tindivanam+Taluk)',
+    directionsUrl: 'https://www.google.com/maps/dir//Tindivanam+Taluk,+Ongur,+Tamil+Nadu+604305/@12.2359,79.7431,16z',
+  },
+  helpline: {
+    campusControlRoom: '092976 23456',
+    chiefSecurityOfficer: '092976 23456',
+    deanStudentWelfare: '092976 23456',
+    antiRaggingHelpline: '092976 23456 (24/7 Takshashila Helpline)',
+    email: 'safety.complaints@takshashilauniv.ac.in',
+    website: 'https://takshashilauniv.ac.in',
+  },
+};
+
+export const TAKSHASHILA_BLOCKS: CampusBlock[] = [
+  {
+    id: 'block-admin',
+    name: 'Administrative & Chancellery Tower',
+    tamilName: 'நிர்வாக மற்றும் துணைவேந்தர் அலுவலக வளாகம்',
+    code: 'TU-ADM-01',
+    category: 'academic',
+    description: 'Central governing offices, Vice Chancellor chamber, Registrar desk, and Chief Proctor safety headquarters with central lawn.',
+    locationDetails: 'Main Entrance Plaza, North Wing (Facing Central Water Quadrangle)',
+    gpsCoordinates: { lat: 12.2362, lng: 79.7435 },
+    cctvCount: 36,
+    emergencyBooth: 'Ground Floor Chancellery Foyer (Booth A-1)',
+    securityInCharge: 'Officer P. Sundaram (Central Command)',
+    contactNumber: '092976 23456',
+    safetyRating: 'Zone Alpha - High Safety',
+    image: 'https://images.unsplash.com/photo-1541829070764-84a7d30dd3f3?auto=format&fit=crop&w=1200&q=85',
+  },
+  {
+    id: 'block-set',
+    name: 'School of Engineering & Technology (SET)',
+    tamilName: 'பொறியியல் மற்றும் தொழில்நுட்ப புலம்',
+    code: 'TU-SET-02',
+    category: 'academic',
+    description: 'Smart lecture theatres, AI & Robotics research hubs, IoT & VLSI development centres, and computer mainframe floors with glass atrium.',
+    locationDetails: 'East Academic Corridor, Adjacent to Innovation Quadrangle',
+    gpsCoordinates: { lat: 12.2368, lng: 79.7442 },
+    cctvCount: 48,
+    emergencyBooth: 'SET Ground Floor Atrium & Lab Complex 2 (Booth E-2)',
+    securityInCharge: 'Senior Guard M. Rajendran',
+    contactNumber: '092976 23456',
+    safetyRating: 'Zone Alpha - High Safety',
+    image: 'https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1200&q=85',
+  },
+  {
+    id: 'block-agri',
+    name: 'School of Agricultural Sciences',
+    tamilName: 'வேளாண் அறிவியல் புலம் & ஆராய்ச்சிப் பண்ணை',
+    code: 'TU-AGR-03',
+    category: 'academic',
+    description: 'Agronomy laboratories, polyhouse climate research units, organic research fields, and soil testing botanical farm.',
+    locationDetails: 'South-East Agro Research Sector (Bordering Botanical Conservatory)',
+    gpsCoordinates: { lat: 12.2345, lng: 79.7455 },
+    cctvCount: 24,
+    emergencyBooth: 'Agri Farm Pavilion Gate (Booth AG-1)',
+    securityInCharge: 'Officer K. Selvam',
+    contactNumber: '092976 23456',
+    safetyRating: 'Zone Beta - Monitored Perimeter',
+    image: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1200&q=85',
+  },
+  {
+    id: 'block-sash',
+    name: 'School of Arts, Sciences & Allied Health',
+    tamilName: 'கலை, அறிவியல் மற்றும் துணை மருத்துவ அறிவியல் புலம்',
+    code: 'TU-SASH-04',
+    category: 'academic',
+    description: 'Modern science auditoriums, physiotherapy clinical simulation labs, and digital humanities multimedia suites.',
+    locationDetails: 'West Academic Ring, Near Central Health Pavilion',
+    gpsCoordinates: { lat: 12.2355, lng: 79.7420 },
+    cctvCount: 38,
+    emergencyBooth: 'SASH Grand Staircase Entrance (Booth S-4)',
+    securityInCharge: 'Inspector V. Ramesh',
+    contactNumber: '092976 23456',
+    safetyRating: 'Zone Alpha - High Safety',
+    image: 'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=1200&q=85',
+  },
+  {
+    id: 'block-library',
+    name: 'Takshashila Central Library & Knowledge Hub',
+    tamilName: 'மத்திய நூலகம் மற்றும் அறிவு மையம்',
+    code: 'TU-LIB-05',
+    category: 'facility',
+    description: 'Multi-tier air-conditioned library housing 50,000+ volumes, IEEE digital access terminals, and 24/7 reading halls.',
+    locationDetails: 'Central Campus Core (Inter-Connecting All Academic Wings)',
+    gpsCoordinates: { lat: 12.2360, lng: 79.7430 },
+    cctvCount: 42,
+    emergencyBooth: 'Library Quadrangle East Corridor (Booth L-1)',
+    securityInCharge: 'Duty Security Officer A. Murugan',
+    contactNumber: '092976 23456',
+    safetyRating: 'Zone Alpha - High Safety',
+    image: 'https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=1200&q=85',
+  },
+  {
+    id: 'block-boys-hostel',
+    name: 'Kaveri & Vaigai Boys Hostel Complex',
+    tamilName: 'காவேரி & வைகை மாணவர் விடுதி வளாகம்',
+    code: 'TU-BH-06',
+    category: 'hostel',
+    description: 'Residential quarters with biometric turnstiles, warden control stations, indoor recreation lounges, and dining hall.',
+    locationDetails: 'North-East Residential Sector, Near Sports Stadium',
+    gpsCoordinates: { lat: 12.2375, lng: 79.7450 },
+    cctvCount: 56,
+    emergencyBooth: 'Kaveri Block Main Porch & Gate 2 (Booth BH-1)',
+    securityInCharge: 'Chief Resident Warden Dr. C. Narayanan',
+    contactNumber: '092976 23456',
+    safetyRating: 'Zone Alpha - Protected Residential',
+    image: 'https://images.unsplash.com/photo-1555854877-bab0e564b8d5?auto=format&fit=crop&w=1200&q=85',
+  },
+  {
+    id: 'block-girls-hostel',
+    name: 'Thamirabarani & Bhavani Girls Hostel Wing',
+    tamilName: 'தாமிரபரணி & பவானி மாணவிகள் விடுதி வளாகம்',
+    code: 'TU-GH-07',
+    category: 'hostel',
+    description: 'High-security all-women residential block with dedicated female security guards, biometric access, and 24/7 vehicle escort.',
+    locationDetails: 'North-West Gated Residential Enclave (Strict Access Protocol)',
+    gpsCoordinates: { lat: 12.2372, lng: 79.7415 },
+    cctvCount: 64,
+    emergencyBooth: 'Thamirabarani Gate 1 Reception & Emergency Alarm (Booth GH-1)',
+    securityInCharge: 'Head Warden Prof. S. Gomathi & Resident Squad',
+    contactNumber: '092976 23456',
+    safetyRating: 'Zone Alpha Plus - Maximum Security Zone',
+    image: 'https://images.unsplash.com/photo-1560439514-4e9645039924?auto=format&fit=crop&w=1200&q=85',
+  },
+  {
+    id: 'block-sports-auditorium',
+    name: 'Auditorium & Sports Athletic Arena',
+    tamilName: 'மத்திய கலையரங்கம் & விளையாட்டரங்கம்',
+    code: 'TU-SPT-08',
+    category: 'facility',
+    description: '350-capacity acoustic air-conditioned auditorium, cricket ground, basketball courts, and multi-gym pavilion.',
+    locationDetails: 'South Campus Quadrant, Near Cafeteria Plaza',
+    gpsCoordinates: { lat: 12.2348, lng: 79.7425 },
+    cctvCount: 30,
+    emergencyBooth: 'Sports Pavilion South Walkway (Booth SP-1)',
+    securityInCharge: 'Sports Director & Security Post #4',
+    contactNumber: '092976 23456',
+    safetyRating: 'Zone Alpha - High Safety',
+    image: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1200&q=85',
+  },
+  {
+    id: 'block-main-gate',
+    name: 'Main Highway Gate & Transit Security Post (GST Road)',
+    tamilName: 'பிரதான நெடுஞ்சாலை நுழைவு வாயில் & பாதுகாப்பு மையம்',
+    code: 'TU-SEC-09',
+    category: 'security',
+    description: '24/7 armed security post, vehicle ANPR automated license plate scanner, visitor management kiosk, and bus transit hub.',
+    locationDetails: 'Highway Intersection, NH-45 GST Road Entrance, Ongur',
+    gpsCoordinates: { lat: 12.2350, lng: 79.7410 },
+    cctvCount: 46,
+    emergencyBooth: 'Main Gate Central Sentry Box (Booth SEC-Main)',
+    securityInCharge: 'Chief Security Officer Col. K. Balasubramanian',
+    contactNumber: '092976 23456',
+    safetyRating: 'Zone Alpha Plus - 24/7 Armed Sentry',
+    image: 'https://images.unsplash.com/photo-1592417817098-8f3d69102a56?auto=format&fit=crop&w=1200&q=85',
+  },
+];
